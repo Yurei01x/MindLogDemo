@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindLog - Daily Journal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <header>
+        <h1>MindLog</h1>
+        <button id="newEntryBtn" class="btn-primary">+ New Entry</button>
+      </header>
+
+      <!-- Journal Entries Container -->
+      <main>
+        <!-- New Entry Form -->
+        <div id="entryForm" class="entry-form hidden">
+          <h2 class="date-header"></h2>
+          <textarea
+            id="entryContent"
+            placeholder="What's on your mind today?"
+          ></textarea>
+          <div class="button-group">
+            <button id="saveEntry" class="btn-primary">Save Entry</button>
+            <button id="cancelEntry" class="btn-secondary">Cancel</button>
+          </div>
+        </div>
+
+        <!-- Entries List -->
+        <div id="entriesList" class="entries-list">
+          <!-- Journal entries will be dynamically inserted here -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

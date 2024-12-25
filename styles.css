@@ -1,0 +1,145 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf2;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+
+h1 {
+  color: #6a5acd;
+  font-size: 32px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff5252;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0; /* Changed from #gray to a proper hex color */
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Add hover state */
+.btn-secondary:hover {
+  background-color: #d4d4d4;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Entry Form Styles */
+.entry-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.date-header {
+  color: #6a5acd;
+  font-family: "Arial Bold", Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+/* Entries List Styles */
+.entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.entry {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.entry-content {
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
